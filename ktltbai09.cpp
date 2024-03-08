@@ -12,7 +12,7 @@ int main()
 {
     //Khai bao bien
     int m ,n;
-    printf("Hay nhap vao so hang cua ma tran :");
+    printf("Hay nhap vao so hang  cua ma tran :");
     scanf("%d",&m);
     printf("Hay nhap vao so cot  cua ma tran :");
     scanf("%d",&n);
