@@ -21,7 +21,7 @@ int main()
     for(int i=0;i<n;i++){
         printf("\n Mat hang thu %d ",i+1);
         printf("\nTen : ");
-       scanf("%d",&sp[i].ten);
+       scanf("%s",&sp[i].ten);
         getchar();
         printf("\nSo luong : ");
         scanf("%d",&sp[i].slg);
@@ -31,7 +31,7 @@ int main()
     }
     int sum=0;
     for(int i=0;i<n;i++){
-        sum+=sp[i].gia;
+        sum+=sp[i].gia*sp[i].slg;
     }
     //In ra ket qua
     printf("\nTong tien cua %d mat hang : %d",n,sum);
