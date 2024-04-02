@@ -4,7 +4,6 @@
 #include<iostream>
 #include<stdio.h>
 #include<string.h>
-
 using namespace std ;
 typedef struct {
     char ho[10];
@@ -25,16 +24,17 @@ typedef struct {
 int main()
 {
     //Khai bao fle
-    FILE*fp;
+    FILE*fp;// Tạo con trỏ file : FILE*;
     fp=fopen("sinhvien.txt","r");
     if(fp==NULL){
         printf("Khong the mo tep !");
+       return 1;
     }
     //Khai bao mang sv
     sinhvien sv[100];
     //Nhan du lieu tu file
     int n;
-    fscanf(fp,"%d",&n);
+    fscanf(fp,"%d",&n);// scanf("%d",&n);
 
     for(int i=0;i<n;i++){
          fscanf(fp,"%d",&sv[i].maSv);
