@@ -21,9 +21,9 @@ int  main()
     }
     int n=0;
     //Cap phat bo nho dong
-    int *a=(int *)malloc(100 * sizeof(int));
-    while(fscanf(fp,"%d",&a[n])!=EOF){
-        n++;
+    int *a=(int *)malloc(100 * sizeof(int));//int a[100];
+    while(fscanf(fp,"%d",&a[n])!=EOF){//end of file 
+        n++;//xem trong mảng có bnh phần tử 
     }
     fclose(fp);
     printf("\n Day ban vua nhap la : ");
